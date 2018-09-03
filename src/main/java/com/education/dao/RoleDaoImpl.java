@@ -149,7 +149,6 @@ public class RoleDaoImpl implements RoleDao {
     private void delete(Connection connection, Role role) throws SQLException {
         PreparedStatement statement = connection.prepareStatement(REMOVE_QUERY);
         statement.setLong(1, role.getId());
-        statement.executeUpdate();
         validateUpdateQuery(statement, format("No roles found with id: %s", role.getId()));
     }
 

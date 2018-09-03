@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS users_teams cascade;
 DROP TABLE IF EXISTS users_roles cascade;
 
 create table teams (
-  id         BIGINT,
+  id         SERIAL,
   name        VARCHAR(255) NOT NULL,
   CONSTRAINT teams_PK PRIMARY KEY (id)
 );
@@ -18,7 +18,7 @@ create table roles (
 );
 
 create table users (
-  id                BIGINT,
+  id                SERIAL,
   first_name        VARCHAR(255) NOT NULL,
   last_name         VARCHAR(255) NOT NULL,
   CONSTRAINT users_PK PRIMARY KEY (id)
