@@ -22,7 +22,7 @@ public class RoleDaoImpl implements RoleDao {
     private static final String SELECT_BY_ID_QUERY = "select * from roles where id = ?";
     private static final String SELECT_ALL_QUERY = "select * from roles";
     private static final String UPDATE_QUERY = "insert into roles (name) values (?) where id = ?";
-    private static final String INSERT_QUERY = "insert into (name) roles values (?)";
+    private static final String INSERT_QUERY = "insert into roles (name) values (?)";
     private static final String REMOVE_QUERY = "delete from roles where id = ?";
 
     public RoleDaoImpl(DataSource dataSource) {

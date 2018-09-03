@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS teams;
-DROP TABLE IF EXISTS roles;
-DROP TABLE IF EXISTS images;
-DROP TABLE IF EXISTS users_teams;
-DROP TABLE IF EXISTS users_roles;
+DROP TABLE IF EXISTS teams cascade;
+DROP TABLE IF EXISTS roles cascade;
+DROP TABLE IF EXISTS images cascade;
+DROP TABLE IF EXISTS users cascade;
+DROP TABLE IF EXISTS users_teams cascade;
+DROP TABLE IF EXISTS users_roles cascade;
 
 create table teams (
   id         BIGINT,
@@ -12,7 +12,7 @@ create table teams (
 );
 
 create table roles (
-  id          BIGINT,
+  id          SERIAL,
   name        VARCHAR(255) NOT NULL,
   CONSTRAINT roles_PK PRIMARY KEY (id)
 );
