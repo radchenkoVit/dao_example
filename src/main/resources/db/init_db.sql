@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS teams cascade;
-DROP TABLE IF EXISTS roles cascade;
-DROP TABLE IF EXISTS images cascade;
-DROP TABLE IF EXISTS users cascade;
-DROP TABLE IF EXISTS users_teams cascade;
-DROP TABLE IF EXISTS users_roles cascade;
+DROP TABLE IF EXISTS teams CASCADE;
+DROP TABLE IF EXISTS roles CASCADE;
+DROP TABLE IF EXISTS images CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS users_teams CASCADE;
+DROP TABLE IF EXISTS users_roles CASCADE;
 
 create table teams (
   id         SERIAL,
